@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://service/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service/">
+
+<xs:element name="bono_cumplimiento" type="tns:bono_cumplimiento"/>
+
+<xs:element name="bono_cumplimientoResponse" type="tns:bono_cumplimientoResponse"/>
+
+<xs:element name="bono_movilizacion" type="tns:bono_movilizacion"/>
+
+<xs:element name="bono_movilizacionResponse" type="tns:bono_movilizacionResponse"/>
+
+<xs:element name="calcular_sueldo_liquido" type="tns:calcular_sueldo_liquido"/>
+
+<xs:element name="calcular_sueldo_liquidoResponse" type="tns:calcular_sueldo_liquidoResponse"/>
+
+<xs:element name="dcto_afp" type="tns:dcto_afp"/>
+
+<xs:element name="dcto_afpResponse" type="tns:dcto_afpResponse"/>
+
+<xs:element name="dcto_salud" type="tns:dcto_salud"/>
+
+<xs:element name="dcto_saludResponse" type="tns:dcto_saludResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="verificar_usuario" type="tns:verificar_usuario"/>
+
+<xs:element name="verificar_usuarioResponse" type="tns:verificar_usuarioResponse"/>
+
+<xs:complexType name="bono_movilizacion">
+<xs:sequence>
+<xs:element name="sueldo_bruto" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bono_movilizacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dcto_afp">
+<xs:sequence>
+<xs:element name="sueldo_bruto" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dcto_afpResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dcto_salud">
+<xs:sequence>
+<xs:element name="sueldo_bruto" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dcto_saludResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bono_cumplimiento">
+<xs:sequence>
+<xs:element name="sueldo_bruto" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bono_cumplimientoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="pass" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calcular_sueldo_liquido">
+<xs:sequence>
+<xs:element name="sueldo_bruto" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calcular_sueldo_liquidoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verificar_usuario">
+<xs:sequence>
+<xs:element name="nombre_usu" type="xs:string" minOccurs="0"/>
+<xs:element name="contra_usu" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verificar_usuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
